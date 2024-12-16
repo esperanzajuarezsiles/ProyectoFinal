@@ -1,0 +1,75 @@
+* {
+    font-family: "Catamaran", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(37, 36, 36);
+  }
+  .cajitas-main{
+    margin: 15px;
+    
+  }
+  
+  .cajita{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    overflow: hidden;
+  }
+  .cajita-titulo{
+    margin-bottom: 65px;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  p{
+    position: relative;
+    z-index: 1;
+    color: #855d53;
+    font-family: consolas;
+  }
+  
+  .boton-custom{
+    margin-top: 40px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    border: 0;
+  }
+  .color-rosa{
+    background-color:#da8994 ;
+  }
+  .color-verde {
+    background-color: #70de63;
+  }
+  .color-morado {
+    background-color: #a780ba;
+  
+  }
+  .cajita::before{
+    border-radius: 50%;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color:#eca1ac ;
+    left: 0;
+    top: -124px;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .cajita.verde::before{
+    background-color: #8df77b;
+  }
+  
+  .cajita.morado::before {
+    background-color: #b991cc;
+  }

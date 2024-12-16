@@ -1,0 +1,1024 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*Diseño de Barra de Navegación */
+
+.header {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.101);
+  padding: 0 30px;
+  height: fit-content;
+  width: 100vw;
+  background-color: white;
+  z-index: 10;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-item a{
+  color: black;
+  font-weight: 700;
+}
+
+.nav ul {
+  height: 100%;
+}
+
+.nav-item-left {
+  padding: 30px 0;
+}
+
+.navbar .nav img {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar .nav-item-left a:hover {
+  padding-bottom: 25px;
+  border-bottom: solid 5px #00754a;
+  color: #00754a;
+}
+
+.navbar .rewards a {
+  padding-bottom: 25px;
+  border-bottom: solid 5px #00754a;
+  color: #00754a;
+}
+
+.navbar .menu a {
+  padding-bottom: 25px;
+  border-bottom: solid 5px #00754a;
+  color: #00754a;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: solid 1px black;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.navbar .black-navitem {
+  background-color: black;
+}
+
+.navbar .black-navitem a {
+  color: white;
+}
+
+.navbar .nav-item-right .no-background:hover {
+  color: rgba(0, 0, 0, 0.701);
+}
+
+.navbar .nav-button .no-background:hover {
+  border: rgba(0, 0, 0, 0.701);
+}
+
+.navbar .black-navitem:hover{
+  background-color: rgba(0, 0, 0, 0.701);
+  border: solid 1px rgba(0, 0, 0, 0.701);
+}
+
+.narrow-screen {
+  display: none;
+}
+
+
+/*Diseño de tarjetas */
+
+#main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.starcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  color: white;
+  max-width: 1400px;
+}
+
+main .pair {
+  flex-direction: row-reverse;
+}
+
+.starimage{
+  min-width: 350px;
+  max-width: 50%;
+}
+
+.starimage img{
+  width: 100%;
+  height: auto;
+}
+
+.startext{
+  text-align: center;
+  min-width: 350px;
+  max-width: 50%;
+  padding: 30px;
+}
+
+.startext h2 strong{
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.startext p{
+  font-size: 23px;
+}
+
+.column-card{
+  justify-content: space-between;
+}
+
+.column-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 49%;
+  height: 100%;
+}
+
+.columntext{
+  height: 12rem;
+  text-align: center;
+  padding: 0;
+}
+
+.columntext p {
+  margin-bottom: 20px;
+}
+
+.starimage-2 img{
+  max-width: 100%;
+}
+
+
+.greenbox{
+  background-color: #1E3932;
+}
+
+.redbox{
+  background-color: #D50032;
+}
+
+.bluebox{
+  background-color: #0044B4;
+}
+
+.pinkcard{
+  background-color: #F6BFD9;
+  color: #d50032;
+}
+
+.lightbluecard{
+  background-color: #98CDE4;
+  color: #003b49;
+}
+
+.startext button{
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.pinkcard button{
+  color: #D50032;
+  border: #D50032 solid 1px;
+}
+
+.lightbluecard button{
+  color: #003b49;
+  border: #003b49 solid 1px;
+}
+
+.startext button:hover{
+  background-color: rgba(255, 255, 255, 0.153);
+}
+
+/*Diseño de menú */
+.menu-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-display .menu-position {
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-display .menu-section {
+  width: 100%;
+}
+
+.menu-display .menu-header{
+  padding: 40px 20px 20px 20px;
+  font-size: larger;
+}
+
+.menu-display .menu-item {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.menu-display .menu-item .menu-title {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  padding: 20px 0;
+}
+
+.menu-display .menu-item .menu-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.menu-display .menu-item .menu-options .option-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-display .menu-item .menu-options .option-item img {
+  height: 170px;
+  width: 170px;
+  background-color: #1E3932;
+  border-radius: 50%;
+  position: relative;
+}
+
+.menu-display .menu-item .menu-options .option-item img:hover {
+  border: solid 10px rgba(245, 245, 245, 0.559);
+}
+
+/*Diseño de rewards */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  justify-items: center;
+  align-items: center;
+}
+
+.aside-section{
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  background-color: #16493B;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.101);
+}
+
+.aside-section #middle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  text-align: center;
+  gap: 15px;
+  font-size: 22px;
+  color: white;
+  position: fixed;
+  top: 35%;
+  right: 65%;
+  z-index: 2;
+}
+
+#middle img{
+  width: 70%;
+}
+
+#middle h2{
+  font-weight: 500;
+}
+
+#middle-buttons{
+  width: 75%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#middle-buttons button{
+  font-weight: 700;
+}
+
+#no-background-white{
+  border-color: white;
+  color: white;
+}
+
+#no-background-white:hover{
+  border-color: #00754a;
+  color: #00754a;
+}
+
+#white-button{
+  border: white;
+  background-color: white;
+  color: #16493B;
+}
+
+.aside-section #rewards-image img{
+  position: fixed;
+  height: auto;
+  width: 15%;
+  bottom: 0;
+  left: 20%;
+  z-index: 1;
+}
+
+.article-section {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+  font-size: medium;
+  max-width: 100%;
+}
+
+#info-section .info-section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 15%;
+}
+
+#info-section .pair-background {
+  width: 100%;
+  background-color: #F1F0EB;
+}
+
+#Benefits h3{
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+#Benefits h3 strong {
+  font-weight: 700;
+}
+
+#Benefits h3 i {
+  color: gold;
+}
+
+#Benefits .images-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+#Benefits .rewards-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  max-width: 25%;
+  text-align: center;
+}
+
+#Benefits .rewards-item img{
+  max-width: 154px;
+  max-height: 120px;
+}
+#Benefits .rewards-item p{
+  max-width: 80%;
+}
+
+#star-rewards .star-rewards-item {
+  margin-bottom: 40px;
+  font-size: medium;
+  max-width: 60%;
+}
+#star-rewards .star-rewards-item img {
+  width: 100%;
+}
+
+#rewards-dinamica {
+  margin: 30px 0;
+}
+
+#rewards-dinamica h2, #rewards-dinamica p {
+  margin-bottom: 5%;
+}
+
+#rewards-dinamica #rewards-dinamica-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#rewards-dinamica #rewards-dinamica-container .dinamica-images {
+  max-width: 50%;
+}
+
+#rewards-dinamica #rewards-dinamica-container .dinamica-images-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#rewards-dinamica #rewards-dinamica-container img {
+  max-width: 50%;
+}
+
+#rewards-dinamica #rewards-dinamica-container #dinamica-gif {
+  aspect-ratio: 1/1;
+  max-width: 100%;
+}
+
+#rewards-dinamica #rewards-dinamica-container p {
+  max-width: 50%;
+}
+
+#rewards-dinamica #rewards-dinamica-container #chica-starbucks {
+  max-width: 100%;
+}
+
+#info-section #rewards-video{
+  width: 100%;
+  padding: 0;
+}
+
+#info-section #rewards-video iframe {
+  width: 100%;
+  aspect-ratio: 1/0.6;
+}
+
+#starapp h2 {
+  margin-bottom: 5%;
+}
+
+#starapp #starapp-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+#starapp #starapp-images-container .star-images-item img {
+  max-width: 50%;
+}
+
+#starapp #starapp-images-container .star-images-item p {
+  max-width: 50%;
+}
+
+#starapp #starapp-images-container .star {
+  width: 50px;
+  height: 39px;
+}
+
+#starapp #starapp-images-container .star-images-item {
+  display: flex;
+  align-items: center;
+  max-width: 35%;
+  margin-bottom: 5%;
+}
+
+#starapp #starapp-images-container .star-value {
+  max-width: 25%;
+}
+
+#starapp #starapp-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#starapp #starapp-text-container img {
+  max-width: 100%;
+}
+
+#experiencia-starbucks .experiencia-item {
+  margin-bottom: 5%;
+}
+
+#experiencia-starbucks .experiencia-image {
+  max-width: 50%;
+}
+
+#experiencia-starbucks #experiencia-logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#info-section #conoce-mas {
+  flex-direction: row;
+  max-width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#conoce-mas #conoce-mas-image {
+  max-width: 70%;
+}
+
+#conoce-mas #conoce-mas-image img {
+  width: 100%;
+}
+
+#conoce-mas #conoce-mas-text {
+  max-width: 40%;
+}
+
+#starbucks-logo img {
+  max-width: 70%;
+}
+
+/*Diseño de footer */
+
+.info-footer {
+  box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+  padding: 0 10px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.footer-item {
+  width: 100%;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 0;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.info-footer .list-title h3{
+  font-weight: 500;
+}
+
+.info-footer .list-title i{
+  display: none;
+}
+
+.info-footer .info-list{
+  margin-bottom: 25px;
+}
+
+.info-footer .info-list a{
+  color: rgba(0, 0, 0, 0.701);
+}
+
+.info-footer .info-list a:hover{
+  color: black;
+}
+
+.lower-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 98%;
+  border-top: solid 1px #eee;
+  margin-bottom: 50px;
+}
+
+.lower-footer .lower-footer-item {
+  margin: 20px;
+}
+
+.lower-footer .lower-footer-item li{
+  display: inline-block;
+}
+
+.lower-footer .brand-icons a{
+  display: block;
+  font-size: 23px;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12.5%;
+}
+
+.lower-footer .brand-icons a:hover{
+  background-color: rgba(0, 0, 0, 0.701);
+  position: relative;
+  bottom: 5px;
+}
+
+.lower-footer .brand-icons a{
+  color: white;
+}
+
+.lower-footer .legal{
+  text-align: center;
+  color: #999;
+}
+
+.lower-footer .legal a{
+  color: #999;
+  margin-right: 15px;
+  position: relative;
+}
+
+.lower-footer .legal a:hover{
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.lower-footer .legal a::after{
+  content: "|";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -13px;
+}
+
+.lower-footer span{
+  color: #999;
+}
+
+/*Diseño cookie footer*/
+.cookie-footer{
+  box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+}
+
+.cookie-footer .banner-text{
+  font-size: 15px;
+  font-weight: 400;
+  padding: 22px 0 22px 15px;
+  color: black;
+  flex: 1 300px;
+}
+
+.cookie-footer .banner-text strong{
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.cookie-footer .banner-text a{
+  color: black;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.cookie-footer .banner-button{
+  max-width: 130px;
+}
+
+.cookie-footer .banner-button button{
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: black;
+  font-size: medium;
+  border-radius: 15px;
+  font-weight: 600;
+  width: 80px;
+  height: 30px;
+}
+
+.cookie-footer .banner-button button a{
+  color: white;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1200px) {
+  /*Diseño rewards*/
+  #Benefits .images-container .rewards-item{
+      max-width: 50%;
+  }
+
+  #info-section .info-section-item {
+      padding: 20px 7%;
+  }
+}
+
+@media (max-width: 850px) {
+  /*Diseño Nav*/
+  .navbar {
+      width: 100%;
+      margin: 0;
+  }
+
+  .narrow-screen {
+      display: block;
+  }
+
+  .nav-item-left {
+      display: none;
+  }
+
+  .nav-item-right {
+      display: none;
+  }
+
+  /*Diseño tarjetas*/
+  .starcard{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .starcard .starimage {
+      max-width: 100%;
+  }
+
+  .starcard .startext {
+      max-width: 100%;
+  }
+
+  .starcard .column-item {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  /*Diseño menu*/
+
+  .menu-display .menu-item .menu-options {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*Diseño rewards*/
+
+  .grid-container {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+  }
+
+  .aside-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.101);
+  }
+  
+  .aside-section #middle{
+      position: static;
+      width: 60%;
+      z-index: 2;
+  }
+
+  #middle-buttons{
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+  }
+
+  #middle-buttons button{
+      margin-bottom: 15px;
+  }
+
+  .aside-section #rewards-image{
+      align-self: flex-end;
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .aside-section #rewards-image img{
+      position: static;
+      height: auto;
+      width: 40%;
+  }
+
+  /*Diseño footer*/
+  .top-footer {
+      flex-direction: column;
+  }
+
+  .top-footer .info-list a{
+      display: none;
+  }
+
+  .top-footer .ul {
+      width: 100%;
+  }
+
+  .info-footer .list-title{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+  }
+
+  .info-footer .list-title i{
+      display: inline-flex;
+      cursor: pointer;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  /*Diseño menu*/
+
+  .menu-display .menu-item .menu-options .option-item img {
+      height: 160px;
+      width: 160px;
+  }
+
+  /*Diseño rewards*/
+
+  .aside-section #middle{
+      width: 90%;
+  }
+
+  #Benefits .images-container .rewards-item{
+      max-width: 80%;
+  }
+
+  #rewards-dinamica #rewards-dinamica-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  #rewards-dinamica #rewards-dinamica-container .dinamica-images {
+      max-width: 100%;
+  }
+  
+  #rewards-dinamica #rewards-dinamica-container img {
+      max-width: 30%;
+  }
+  
+  #rewards-dinamica #rewards-dinamica-container #dinamica-gif {
+      aspect-ratio: 1/1;
+      max-width: 70%;
+  }
+  
+  #rewards-dinamica #rewards-dinamica-container p {
+      font-size: large;
+      max-width: 70%;
+  }
+
+  #rewards-dinamica #rewards-dinamica-container #chica-starbucks{
+      max-width: 80%;
+      align-self: center;
+  }
+
+  #starapp h2{
+      margin-bottom: 15%;
+  }
+
+  #starapp #starapp-images-container{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #starapp #starapp-images-container .star-images-item{
+      max-width: 90%;
+      justify-content: center;
+      font-size: large;
+      margin-bottom: 10%;
+  }
+
+  #starapp #starapp-images-container .star-value{
+      max-width: 90%;
+  }
+
+  #starapp #starapp-images-container .star-value p{
+      max-width: 80%;
+  }
+
+  #experiencia-starbucks .experiencia-item{
+      margin-bottom: 10%;
+  }
+
+  #experiencia-starbucks .experiencia-image{
+      max-width: 80%;
+  }
+
+  #experiencia-starbucks #experiencia-logos{
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+  }
+
+  #experiencia-starbucks #experiencia-logos img{
+      max-width: 50%;
+  }
+
+  #info-section #conoce-mas{
+      flex-direction: column;
+  }
+
+  #conoce-mas #conoce-mas-image{
+      max-width: 90%;
+  }
+
+  #conoce-mas #conoce-mas-text{
+      max-width: 80%;
+      text-align: left;
+      margin-top: 10%;
+  }
+
+  #info-section #starbucks-logo{
+      padding: 20px 0;
+      max-width: 100%;
+  }
+
+  /*Diseño footer*/
+  .footer-item .legal {
+  text-align: start;
+  align-self: flex-start;
+  }
+
+  .footer-item .legal li{
+      display: block;
+      margin-bottom: 25px;
+      font-size: 15px;
+  }
+
+  .lower-footer .legal a{
+      color: rgba(0, 0, 0, 0.7);
+      position: static;
+  }
+  
+  .lower-footer .legal a:hover{
+      color: #999;
+  }
+  
+  /*Diseño cookie footer*/
+  .cookie-footer{
+      flex-direction: column;
+  }
+
+  .cookie-footer .banner-text{
+      flex: 0;
+  }
+}
